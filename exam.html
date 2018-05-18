@@ -1,0 +1,97 @@
+<html>
+<head>
+	<title>EXAM</title>
+</head>
+	<body>
+		<form>
+		<table>
+			<tr>
+				<th>Number 1</th>
+				<td><input type="text" id="n1"></td>
+			</tr>
+			<tr>
+				<th>Number 2:</th>
+				<td><input type="text" id="n2"></td>
+			</tr>
+			<tr>
+				<th>Answer:</th>
+				<td><input type="text" id="i"></td>
+			</tr>
+			<tr>
+				<th></th>
+				<td>Select Operator from Below Combo Box "Arithmatic or Logical"</td>
+			</tr>
+			<tr>
+				<th>Select Operator</th>
+				<td><select>
+				<option>Arithmatic Operator</option>
+				<option>Logical Operator</option>
+				</select></td>
+			</tr>
+			<tr>
+				<th></th>
+				<td><input type="radio" id="n3" value="and">&&</td>
+			</tr>
+			<tr>
+				<th></th>
+				<td><input type="radio" id="n4" value="oror">!!</td>
+			</tr>
+			<tr>
+			<th></th>
+				<td><input type="radio" id="n4" value="not">!</td>
+			</tr>
+			<tr>
+			<th>Select Operation</th>
+				<td><input type="radio" id="n5" value="addtion">Addition<input type="radio" name="n6" value="subtraction">Subtraction</td>
+			</tr>
+			<tr>
+			<th></th>
+				<td><input type="radio" id="n6" value="multiplication">Multiplication<input type="radio" name="n6" value="division">Division</td>
+			</tr>
+			<tr>
+				<th></th>
+				<td><input type="button" name="n7" value="Click here to Get the result based on your selection" onclick="calculate()"></td>
+			</tr>
+		</table>
+		</form>
+		<p id="demo"></p>
+		<script>
+			function Function1()
+			{	
+					var ans =document.getElementById("i").value;
+            if (document.getElementById("n5").value = "addition") {
+                ans= calculate(add);
+            }
+            if (document.getElementById("n6").value = "subtraction") {
+                ans= calculate(subtract);
+            }
+            if (document.getElementById("n7").value = "multiplication") {
+                ans= calculate(multiply);
+            }
+            if (document.getElementById("n8").value = "division") {
+                ans= calculate(divide);
+            }
+        }
+		function calculate(action){
+            var num1 = document.getElementById("n1").value;
+            var num2 = document.getElementById("n2").value;
+            var result;
+            switch(action){
+            case add:
+                result= parseInt(num1)+parseInt(num2);
+            break;
+            case subtract:
+                result= num1-num2;
+            break;
+            case multiply:
+                result= num1*num2;
+            break;
+            case divide:
+                result= num1/num2;
+            break;
+        }
+
+        return result;
+		</script>
+	</body>
+</html>

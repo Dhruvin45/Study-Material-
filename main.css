@@ -1,0 +1,54 @@
+#demo {
+			border: 5px dashed white;
+			border-radius: 10px;
+			background-size: cover;
+			background-clip: content-box;
+		}
+header {
+	background-color: black;
+	padding: 10px;
+	color: white;
+	font-family: "Comic Sans MS";
+	font-size: 30px;
+}
+
+ul {
+	background-color: brown;
+	padding: 20px;	
+	text-align: center;
+	font-family: "Comic Sans MS";
+}
+
+li {
+    display: inline;
+	font-size: 20px;
+	font-family: "Comic Sans MS";
+	color: black;
+}
+
+aside {
+    float: right;
+    width: 300px;
+    border: 3px solid black;
+    padding: 20px;
+	font-family: "Comic Sans MS";
+}
+
+article {
+	background-color: green;
+    width: 900px;
+    border: 5px solid black;
+    padding: 20px;
+	font-family: "Comic Sans MS";	
+}
+
+
+hgroup.h1 {
+	background-color: violet;
+	font-family: "Comic Sans MS";
+}
+
+hgroup.h2 {
+	background-color: green;	
+	font-family: "Comic Sans MS";
+}
